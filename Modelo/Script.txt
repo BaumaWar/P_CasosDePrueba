@@ -1,0 +1,5 @@
+insert into calificacion values(3,'Sin calificacion');
+insert into tipo_prueba values(3,'PQC');
+insert into tipo_prueba values(4,'PEA');
+alter table prueba_proceso change column asociacion_propia quien_prueba bigint(50);
+alter table prueba_proceso add foreign key(quien_prueba) references tipo_prueba(id_tip_pru);

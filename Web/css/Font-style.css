@@ -1,0 +1,46 @@
+body{
+    font-size: 14px;
+}
+.PS{
+    font-size: 19px;
+    font-family: serif;
+    font-style: oblique;
+}
+.PN{
+    font-family: monospace;
+    font-style: normal;
+    font-weight: normal;
+}
+.comun{
+    font-size: 12px;
+    font-weight: normal;
+    
+}
+.cajas{
+    margin-top: 4px;
+}
+.labelHead{
+    font-size: 13px;
+    font-weight: inherit;
+}
+.labelCP{
+    font-size: 12px;
+}
+.textarea{
+    font-size: 13px;
+}
+.oculto{
+    display: none;
+}
+.circulo {
+    width: 20px;
+    height: 10px;
+    border-radius: 48%;
+    
+    text-align: center;
+    margin:0px auto;
+    padding:80%
+}
+.rojoNoValido{
+    color: tomato;
+}

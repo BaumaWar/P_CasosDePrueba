@@ -1,0 +1,45 @@
+.graficaLiquidacion{
+    border: 1px solid #56C9D7;
+    border-radius: 6px;
+    margin: 15px;
+    padding: 1px;
+    width: 355px;
+    height: 255px;
+    position: relative;
+    top: 45px;
+    /*Arregla para que este response*/
+    display: inline-block;
+}
+.centrarGrafica{
+    text-align: center;
+}
+.graficaEstado{
+    border: 1px solid #56C9D7;
+    border-radius: 6px;
+    
+    padding: 1px;
+    width: 1005px;
+    height: 390px;
+    position: relative;
+    top:55px;
+    /*Arregla para que este response*/
+    display: inline-block;
+}
+.group-select-Modulo{
+    width: 500px;
+}
+.selectModuloEstado{
+    position:relative ;
+    top: 25px;
+    height: 38px;
+    text-align: center;
+    margin: auto;
+    
+}
+.cajaGraficaCentrar{
+    position:relative ;
+    top: 60px;
+    width: 1120px;
+    height: 550px;
+    
+}

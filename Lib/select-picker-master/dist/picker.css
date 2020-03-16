@@ -1,0 +1,121 @@
+.picker {
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
+}
+.picker .pc-element,
+.picker .pc-trigger {
+  display: inline-block;
+  color: #666666;
+  position: relative;
+  z-index: 10;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 0.25rem;
+  word-wrap: break-word;
+  cursor: default;
+  background-color: #ffffff;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  padding: 0 24px 0 6px;
+}
+/*No se dabe que hace aun*/
+.picker .pc-element .pc-close,
+.picker .pc-trigger .pc-close {
+  position: relative;
+  top: 50%;
+  right: 4px;
+  margin-top: -10px;
+  font-size: 16px;
+  cursor: pointer;
+}/* Fin */
+/*.picker .pc-element .pc-close:after,
+.picker .pc-trigger .pc-close:after {
+  content: '\2716';
+}*/
+/*Modificado, elemento selecionado*/
+.picker .pc-element:hover,
+/*Select estatico*/
+.picker .pc-trigger:hover {
+  background-color: #F7F7F7;
+  color: #000000;
+}
+/* Fin */
+.picker .pc-select {
+  position: relative;
+  display:inline-block;
+  width: 995px;
+}
+/*Select sin selecionar*/
+.picker .pc-select .pc-trigger {
+  padding-top: 5px;
+  cursor: pointer;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 995px;
+  overflow: auto;
+  height: calc(2.25rem + 2px);
+}/*Fin*/
+.picker .pc-select .pc-list {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: calc(100% - 6px);
+  width: 100%;
+  border: 1px solid #dee2e6 !important;
+  z-index: 11;
+  background-color: #ffffff;
+}
+/*Buscador*/
+.picker .pc-select .pc-list input[type="search"]{
+  width: 100%;
+  height: 40px;
+  color: #000000;
+  border: 1px solid #dee2e6;
+  position: relative;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid #dee2e6;
+  padding-left: 8px;
+}
+/*Fin*/
+/*select estatico*/
+.picker .pc-select .pc-list ul {
+  /*margin: 0;*/
+  padding: 5px;
+  min-height: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+/* fin */
+.picker .pc-select .pc-list li {
+  display: block;
+  list-style: none;
+  padding: 0 0 0 8px;
+  cursor: pointer;
+  color: #666666;
+  word-wrap: break-word;
+}
+/*Color de las option #f2f2f2*/
+.picker .pc-select .pc-list li:nth-child(even) {
+  background-color: EBFBFF;
+}/* Fin */
+/*lista que despliega el selecionable*/
+.picker .pc-select .pc-list li:hover {
+  background-color: #85C1E9;
+  color: #000000;
+}
+/*fin*/
+/*Cuando no se encuentra la busqueda*/
+.picker .pc-select .pc-list li.not-found {
+  font-style: normal;
+  text-align: center;
+  cursor: default;
+}
+/* Fin */
+/*Cuando se busca una palabra*/
+.picker .pc-select .pc-list li .searched {
+  font-weight: bold;
+}
+/* Fin */
+/* Margen del select */
+.picker .pc-select .pc-trigger {
+  margin-bottom: 12px;
+}

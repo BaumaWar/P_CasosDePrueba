@@ -1,0 +1,42 @@
+.dropboton {
+  padding: 18px;
+  border: none;
+}
+
+.dropdowns {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contents {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.dropdown-contents :hover {background-color: #f1f1f1}
+
+.dropdowns:hover .dropdown-contents {
+  display: block;
+}
+
+.dropdownssSubMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-contentsSubMenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  z-index: 10;
+}
+
+/*.dropdown-contentsSubMenu:hover {background-color: #f1f1f1}*/
+
+.dropdownssSubMenu:hover .dropdown-contentsSubMenu{
+  display: block;
+}

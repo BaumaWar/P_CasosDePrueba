@@ -1,0 +1,21 @@
+.tablaReportePrueba{
+    font-size: 12px;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: 15px;
+    font-weight: 500;
+}
+.borderCollapse{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+.aprobado{
+    height: 10px;
+}
+.caso{
+    padding: 3px;
+}
+.width_tamañoHoja{
+    width:685px;
+    
+}

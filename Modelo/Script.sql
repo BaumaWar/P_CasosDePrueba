@@ -1,0 +1,13 @@
+alter table detalle_prueba_proceso add column(fecha_asociacion varchar(21));
+alter table detalle_prueba_proceso add column(fk_usu_asociador bigInt(50));
+alter table detalle_prueba_proceso add foreign key(fk_usu_asociador) references usuario(id_usu);
+create table tbl_asociacion_prueba_caso(pk_aso_pru_cas bigint(50) primary key auto_increment, fk_pru_pro bigint(50), fk_cas_pru bigint(50), fk_usu bigint(50), fecha_creacion varchar(21));
+alter table tbl_asociacion_prueba_caso add foreign key(fk_pru_pro) references prueba_proceso(id_pru_pro);
+alter table tbl_asociacion_prueba_caso add foreign key(fk_cas_pru) references caso_prueba(id_cas_pru);
+alter table tbl_asociacion_prueba_caso add foreign key(fk_usu) references usuario(id_usu);
+alter table tbl_asociacion_prueba_caso add column(fk_calificado tinyint(2));
+alter table tbl_asociacion_prueba_caso add foreign key(fk_calificado) references calificacion(id_cal);
+alter table prueba_proceso add column(asociacion_propia tinyint(2));
+ALTER TABLE prueba_proceso ADD COLUMN(estadoPrueba TINYINT(2));
+ALTER TABLE prueba_proceso ADD COLUMN(fecha_terminado VARCHAR(21));
+ALTER TABLE prueba_proceso ADD COLUMN(fecha_pausa VARCHAR(21));
