@@ -44,3 +44,6 @@ body{
 .rojoNoValido{
     color: tomato;
 }
+.options{
+    font-size: 13px;
+}
