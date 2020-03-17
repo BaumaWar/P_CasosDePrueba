@@ -1,0 +1,12 @@
+alter table prueba_proceso change column estadoPrueba Estado_Prueba bigint(50);
+alter table prueba_proceso change column Estado_Prueba estado bigint(50);
+alter table prueba_proceso change column quien_prueba usuario_tester bigint(50);
+alter table prueba_proceso change column fk_usu fk_usuario_creador bigint(50);
+alter table prueba_proceso change column fk_usu fk_usuario_creador bigint(50);
+alter table prueba_proceso change column fk_mod fk_modulo int(20);
+alter table prueba_proceso change column fecha_terminado fecha_finalizada_prueba varchar(21);
+alter table prueba_proceso change column fecha_pausa fecha_pausa_prueba varchar(21);
+alter table prueba_proceso change column descripcion_pru_pro descripcion_prueba varchar(200);
+alter table detalle_prueba_proceso change column argumento comentario varchar(3000);
+alter table detalle_prueba_proceso change column fk_pru_pro fk_prueba_proceso bigint(50);
+alter table detalle_prueba_proceso change column fk_cas_pru fk_caso_prueba bigint(50);
