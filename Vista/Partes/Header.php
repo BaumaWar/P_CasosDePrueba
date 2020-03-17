@@ -40,6 +40,7 @@
                     </ul>
                     
                     <a class="dropdown-item" href="index.php?modulo=Prueba&controlador=Prueba&funcion=crear"><img class='ncnsz' src='../Lib/open-iconic-master/svg/layers.svg'> Prueba</a>
+                    <a class="dropdown-item" href="index.php?modulo=PruebaCaso&controlador=PruebaCaso&funcion=vistaFormularioPruebaCasoCrear"><img class='ncnsz' src='../Lib/open-iconic-master/svg/layers.svg'> Prueba2</a>
                     <a class="dropdown-item" href="index.php?modulo=Prueba&controlador=Prueba&funcion=listar"><img class='ncnsz' src='../Lib/open-iconic-master/svg/list.svg'> Listado</a>
                     
                     <!--<a class="dropdown-item" href="index.php?modulo=Notificacion&controlador=Notificacion&funcion=listar" title="En Construcion"><img class='ncnsz' src='../Lib/open-iconic-master/svg/list.svg'> Listado</a>-->
