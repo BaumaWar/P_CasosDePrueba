@@ -14,6 +14,7 @@
     <link language="css" rel="stylesheet" href="css/iconos.css?<?php echo rand(0, 9999); ?>">
     <link language="css" rel="stylesheet" href="css/botones.css?<?php echo rand(0, 9999); ?>">
     <link language="css" rel="stylesheet" href="../Lib/select-picker-master/dist/picker.css?<?php echo rand(0, 9999); ?>">
+    <link language="css" rel="stylesheet" href="../Lib/bootstrap-select-1.13.9/css/bootstrap-select.css?<?php echo rand(0, 9999); ?>">
     <link language="css" rel="stylesheet" href="css/dropdown.css?<?php echo rand(0, 9999); ?>">
     <link language="css" rel="stylesheet" href="css/Font-style.css?<?php echo rand(0, 9999); ?>">
     <link language="css" rel="stylesheet" href="css/graficas.css?<?php echo rand(0, 9999); ?>">

@@ -9,6 +9,7 @@
     <script language="javascript" src="js/datatables.min.js?<?php echo rand(0, 9999); ?>"></script>
     <!-- Plugin que proporciona el filtro en los select -->
     <script language="javascript" src="../Lib/select-picker-master/dist/picker.min.js?<?php echo rand(0, 9999); ?>"></script>
+    <script language="javascript" src="../Lib/bootstrap-select-1.13.9/js/bootstrap-select.js?<?php echo rand(0, 9999); ?>"></script>
     <!-- Bootstrap-->
     <script language="javascript" src="css/bootstrap/js/popper.min.js?<?php echo rand(0, 9999); ?>" ></script>
     <script language="javascript" src="css/bootstrap/js/bootstrap.bundle.js?<?php echo rand(0, 9999); ?>" ></script>
