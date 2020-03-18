@@ -1,0 +1,9 @@
+alter table tbl_asociacion_prueba_caso rename vinculacion_prueba_caso;
+alter table vinculacion_prueba_caso change column fk_pru_pro fk_prueba_proceso bigint(50);
+alter table vinculacion_prueba_caso change column fk_cas_pru fk_caso_prueba bigint(50);
+alter table vinculacion_prueba_caso change column fk_usu fk_usuario bigint(50);
+alter table vinculacion_prueba_caso change column fecha_creacion fecha_vinculacion bigint(50);
+alter table vinculacion_prueba_caso change column fk_calificado fk_calificacion bigint(50);
+alter table vinculacion_prueba_caso change column fk_calificado fk_calificacion tinyint(2);
+alter table vinculacion_prueba_caso change column pk_aso_pru_cas id_vin_pru_cas bigint(50);
+alter table detalle_prueba_proceso add column fecha_calificacion varchar(21);

@@ -10,3 +10,5 @@ alter table prueba_proceso change column descripcion_pru_pro descripcion_prueba 
 alter table detalle_prueba_proceso change column argumento comentario varchar(3000);
 alter table detalle_prueba_proceso change column fk_pru_pro fk_prueba_proceso bigint(50);
 alter table detalle_prueba_proceso change column fk_cas_pru fk_caso_prueba bigint(50);
+alter table detalle_prueba_proceso change column fecha_asociacion fecha_vinculacion varchar(21);
+alter table detalle_prueba_proceso change column fk_usu_asociador fk_usuario_vinculador bigint(50);
