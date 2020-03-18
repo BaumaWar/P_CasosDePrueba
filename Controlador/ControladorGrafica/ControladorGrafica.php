@@ -1,5 +1,5 @@
 <?php
-include_once '../Modelo/MasterModel.php';
+include_once '../Modelo/MasterModel/MasterModel.php';
 class ControladorGrafica extends MasterModel{
     
     private $Objecto;

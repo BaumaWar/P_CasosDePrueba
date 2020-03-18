@@ -1,8 +1,24 @@
 <?php
+require_once '../Modelo/MasterModel/MasterModel.php';
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+class ModelPruebaCaso extends MasterModel{
+    
+    private $ObjeMasterModel;
+    
+    public function __construct() {
+        
+        $this->ObjeMasterModel= new MasterModel();
+        
+    }
+    
+    public function sqlSelectModulos(){
+        
+        $sql= "select * from modulo";
+        $sqlSelectModulo= $this->ObjeMasterModel->getData($sql);
+        return $sqlSelectModulo;
+        
+    }
+    
+    
+    
+}

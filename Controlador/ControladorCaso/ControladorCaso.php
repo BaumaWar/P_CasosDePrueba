@@ -1,6 +1,6 @@
 <?php
 //Inclusion de la clase que contiene la conexion a la base de datos
-include_once '../Modelo/MasterModel.php';
+include_once '../Modelo/MasterModel/MasterModel.php';
 
 class ControladorCaso extends MasterModel{
     //Atributo privado que instanciamos

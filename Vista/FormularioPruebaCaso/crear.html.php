@@ -21,7 +21,7 @@
                 </div>
                 <div class="col-sm">
                     <span id="" class="labelCP">Fecha de creacion*</span><br>
-                    <input type="text" name="" id="" class="custom-select-sm form-control input-group" />
+                    <input type="text" name="" id="" value="<?php echo $fecha_cre?>" class="text-center options custom-select-sm form-control input-group" disabled />
                 </div>
             </div>
             <!--End Row-->
@@ -31,12 +31,11 @@
                     <span id="descripcionVersion" class="labelCP">Modulo*</span><br>
                     <select name="version" id="versionSCUno" data-live-search="true" class="selectpicker custom-select-sm form-control input-group" data-size="4">
                         <option value="#" class="options">Seleccion del modulo</option>
-                        <option value="0000" class="options">0000</option>
-                        <option value="1111" class="options">1111</option>
-                        <option value="2222" class="options">2222</option>
-                        <option value="3333" class="options">3333</option>
-                        <option value="4444" class="options">4444</option>
-                        <option value="5555" class="options">5555</option>
+                        <?php
+                            foreach ($modulo as $modulo){
+                                echo '<option class="options" value="'.$modulo['id_modulo'].'">'.$modulo['mod_descripcion'].'</option>';
+                            }
+                        ?>
                     </select>
                 </div>
                 <div class="col-sm">
@@ -48,7 +47,14 @@
                     </select>
                 </div>
             </div>
-            <!--End Row-->
+            <!--End Row--> 
+            <!--Start Boton Guardar Prueba-->
+            <div class="row">
+                <div class="col-sm-3 p-3">
+                    <button type="button" id="SavePruebaProceso" class="btn btn-azul btn-block labelCP" >Guardar prueba</button>
+                </div>
+            </div>
+            <!--End Boton Guardar Prueba-->
         </div>
         <!--End CardBody-->
     </div>
