@@ -47,3 +47,6 @@ body{
 .options{
     font-size: 13px;
 }
+.displayNone{
+    display: none;
+}

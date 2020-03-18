@@ -19,6 +19,12 @@ class ModelPruebaCaso extends MasterModel{
         
     }
     
-    
+    public function sqlSelectUsuarios(){
+        
+        $sql= "select id_usu,concat(nombre,' ',apellido) as nombreCompleto from usuario";
+        $sqlSelectUsuario= $this->ObjeMasterModel->getData($sql);
+        return $sqlSelectUsuario;
+        
+    }
     
 }

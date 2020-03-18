@@ -23,4 +23,5 @@
     <script language="javascript" src="../Controlador/ControladorJS/ControladorAddCaso.js?<?php echo rand(0, 9999); ?>"></script>
     <script language="javascript" src="../Controlador/ControladorJS/ControladorNotificacion.js?<?php echo rand(0, 9999); ?>"></script>
     <script language="javascript" src="../Controlador/ControladorJS/ControladorGrafica.js?<?php echo rand(0, 9999); ?>"></script>
+    <script language="javascript" src="../Controlador/ControladorJS/ControladorPruebaCaso/ControladorPruebaCaso.js?<?php echo rand(0, 9999); ?>"></script>
 </footer>

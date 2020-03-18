@@ -572,6 +572,12 @@ $(document).ready(function(){
                             
                             //alert(" "+existe['total']);
                             if(existe2==0){
+                                $("#nombreCrearUsuario").removeClass("rojoNoValido");
+                                $("#apellidoCrearUsuario").removeClass("rojoNoValido");
+                                $("#tipoDocumentoUsuario").removeClass("rojoNoValido");
+                                $("#telefonoCrearUsuario").removeClass("rojoNoValido");
+                                $("#contrasenaCrearUsuario").removeClass("rojoNoValido");
+                                $("#confirmeContrasenaUsuario").removeClass("rojoNoValido");
                                 $('#alertLogin').html('<div class="alert alert-success alert-dismissible fade show text-center" role="alert">\n\
                                                 Registro exitoso\n\
                                                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">\n\
@@ -581,7 +587,7 @@ $(document).ready(function(){
                                             </div>');
                                 setTimeout(function(){ 
                                     window.location.href="index.php?modulo=Usuario&controlador=Login&funcion=login";
-                                },1000);
+                                },3000);
                             }else{
                                 $('#alertLogin').html('<div class="alert alert-danger alert-dismissible fade show text-center" role="alert">\n\
                                                 Los datos ingresados ya estan registrados.\n\
